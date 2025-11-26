@@ -1,0 +1,16 @@
+.button {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-basic-white;
+  background-color: $color-basic-green;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  cursor: pointer;
+}

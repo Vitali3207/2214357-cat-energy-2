@@ -24,7 +24,7 @@
         <button class="main-nav__toggle  button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list list-none">
+        <ul class="main-nav__list style-list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -39,9 +39,9 @@
     </div>
   </header>
 
-  <main class="programs">
+  <main class="main-form">
     <section class="selection">
-      <h2 class="selection__title">Подбор программы</h2>
+      <h1 class="selection__title">Подбор программы</h1>
       <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection__form form" action="https://htmlacademy.ru/" method="post">
         <fieldset class="form__group">
@@ -155,11 +155,11 @@
       </div>
       <div class="contacts__map">
         <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="./images/map-desctop@1x.webp 1x, ./images/map-desctop@2x.webp 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x">
+          <source media="(min-width: $desktop-width)" width="1440" height="400" type="image/webp" srcset="./images/map-desctop@1x.webp 1x, ./images/map-desctop@2x.webp 2x">
+          <source media="(min-width: $tablet-width)" width="768" height="400" type="image/webp" srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x">
           <source width="320" height="362" type="image/webp" srcset="./images/map-mobile@1x.webp 1x, ./images/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="./images/map-desctop@1x.png 1x, ./images/map-desctop@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
+          <source media="(min-width: $desktop-width)" width="1440" height="400" type="image/png" srcset="./images/map-desctop@1x.png 1x, ./images/map-desctop@2x.png 2x">
+          <source media="(min-width: $tablet-width)" width="768" height="400" type="image/png" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
           <img class="contacts-image" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Схема проезда">
         </picture>
       </div>
@@ -170,7 +170,7 @@
       <a class="footer__logo" href="index.html">
         <img class="footer__logo-image" src="#" width="128" height="24" alt="Логотип компании">
       </a>
-      <ul class="footer__social social list-none">
+      <ul class="footer__social social style-list">
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Вконтакте</span>

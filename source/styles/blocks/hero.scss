@@ -1,0 +1,49 @@
+.hero__wrapper {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@1x.jpg"), linear-gradient(to right, $bg-gradient-primary, $bg-gradient-secondary);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@2x.jpg"), linear-gradient(to right, $bg-gradient-primary, $bg-gradient-secondary);
+  }
+
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.hero__image {
+  display: block;
+}
+
+.hero__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $color-basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    color: $color-basic-black;
+  }
+}
+
+.hero__description {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    color: $color-basic-black;
+  }
+}

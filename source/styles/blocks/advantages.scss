@@ -1,0 +1,68 @@
+.advantages__item {
+  border: 1px solid $color-special-grey;
+  border-radius: 3px;
+}
+
+.advantages__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages__number {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.advantages__result {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-basic-grey;
+}
+
+.advantages__price {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+

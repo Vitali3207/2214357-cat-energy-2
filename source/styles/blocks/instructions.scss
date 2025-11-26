@@ -1,0 +1,23 @@
+.instructions__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.instructions__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
