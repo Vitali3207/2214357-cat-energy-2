@@ -13,4 +13,9 @@
   box-sizing: border-box;
   padding: 10px 20px;
   cursor: pointer;
+
+  &--secondary {
+    color: $color-special-dark-grey;
+    background-color: $bg-basic-grey;
+  }
 }

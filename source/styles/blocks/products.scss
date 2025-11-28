@@ -1,3 +1,19 @@
-.products {
-  box-sizing: border-box;
+.products__item {
+  border-bottom: 1px solid $color-light-grey;
+
+  &:nth-child(1) {
+    border-top: 1px solid $color-light-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.products__title {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-basic-black;
 }
