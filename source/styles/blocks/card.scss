@@ -11,14 +11,8 @@
   display: block;
 }
 
-.card__link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .card__title {
   font-family: $font-secondary;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

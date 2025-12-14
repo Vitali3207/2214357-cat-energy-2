@@ -3,22 +3,11 @@
 }
 
 .programs__title {
-  font-family: $font-secondary;
-  font-weight: 400;
-  font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $color-basic-black;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
 }
 
 .programs__description {
-  font-size: 14px;
-  line-height: 18px;
   color: $color-basic-grey;
 
   @media (min-width: $tablet-width) {

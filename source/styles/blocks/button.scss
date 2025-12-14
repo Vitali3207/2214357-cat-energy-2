@@ -1,6 +1,5 @@
 .button {
   font-family: $font-secondary;
-  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
@@ -13,6 +12,18 @@
   box-sizing: border-box;
   padding: 10px 20px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-dark-green;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--secondary {
     color: $color-special-dark-grey;

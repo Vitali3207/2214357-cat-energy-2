@@ -44,22 +44,15 @@
   }
 }
 
-
 .hero__image {
   display: block;
 }
 
 .hero__title {
-  font-family: $font-secondary;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
   text-align: center;
   color: $color-basic-white;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
     text-align: start;
     color: $color-basic-black;
   }
@@ -67,7 +60,6 @@
 
 .hero__description {
   font-family: $font-secondary;
-  font-size: 14px;
   line-height: 14px;
   text-align: center;
   color: $color-basic-white;
