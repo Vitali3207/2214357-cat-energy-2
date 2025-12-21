@@ -1,10 +1,56 @@
 .programs__item {
   background-color: $bg-basic-grey;
+
+  &--slim::before {
+    content: "";
+    width: 50px;
+    height: 53px;
+    display: block;
+    background-image: url("../../icons/logo-slim.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 106px;
+      background-size: 100px 106px;
+    }
+  }
+
+  &--pro::before {
+    content: "";
+    width: 67px;
+    height: 50px;
+    display: block;
+    background-image: url("../../icons/logo-pro.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 200px;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 100px;
+      background-size: 134px 100px;
+    }
+  }
 }
 
 .programs__title {
+  display: inline-block;
   line-height: 37px;
   text-transform: uppercase;
+  background-color: $bg-basic-grey;
 }
 
 .programs__description {
@@ -17,6 +63,7 @@
 }
 
 .programs__link {
+  position: relative;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 16px;
@@ -26,7 +73,7 @@
   cursor: pointer;
 
   &:hover {
-    color: $color-basic-green;
+    opacity: 0.8;
   }
 
   &:focus-visible {
@@ -40,5 +87,19 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    mask-image: url("../../icons/programs-link.svg");
+    mask-repeat: no-repeat;
+    background-size: 32px 10px;
+    background-color: $color-basic-black;
+    position: absolute;
+    top: 10px;
+    left: 115px;
   }
 }

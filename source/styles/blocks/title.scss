@@ -2,11 +2,16 @@
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 36px;
+  font-weight: inherit;
   color: $color-basic-black;
-  background-color: $color-basic-white;
   display: inline-block;
   box-sizing: border-box;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 
   &--small {
     font-family: $font-secondary;
@@ -43,10 +48,5 @@
       font-size: 36px;
       line-height: 36px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
   }
 }
