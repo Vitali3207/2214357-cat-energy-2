@@ -1,3 +1,51 @@
 .social {
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-top: 1px solid $color-border-grey-light;
+  border-bottom: 1px solid $color-border-grey-light;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  mask-image: var(--images);
+  mask-repeat: no-repeat;
+  mask-size: var(--size);
+  mask-position: 50% 50%;
+  background-color: $color-bg-grey;
+
+  &--vkontakte {
+    --images: url("../../icons/vkontakte.svg");
+    --size: 27px 17px;
+  }
+
+  &--youtube {
+    --images: url("../../icons/youtube.svg");
+    --size: 24px 19px;
+  }
+
+  &--telegram {
+    --images: url("../../icons/telegram.svg");
+    --size: 20px 18px;
+  }
+
+  &:hover {
+    background-color: $color-basic-green;
+  }
+
+  &:active {
+    background-color: $color-basic-green;
+    opacity: 0.3;
+  }
 }

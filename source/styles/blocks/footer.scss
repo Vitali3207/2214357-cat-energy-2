@@ -1,3 +1,38 @@
-.footer {
-  background: $bg-basic-grey;
+.footer__wrapper {
+  padding: 40px 20px;
+  background-color: $bg-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
