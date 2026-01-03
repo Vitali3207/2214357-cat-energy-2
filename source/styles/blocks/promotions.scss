@@ -85,5 +85,6 @@
 .promotions__button {
   @media (min-width: $tablet-width) {
     max-width: 256px;
+    width: 100%;
   }
 }

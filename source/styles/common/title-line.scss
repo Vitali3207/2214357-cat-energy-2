@@ -4,20 +4,18 @@
   height: 2px;
   background-color: $color-basic-green;
   top: 12px;
+  left: 0;
   z-index: -1;
-
 
   @media (min-width: $tablet-width) {
     top: 20px;
-    margin-left: -30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -110px;
   }
 
   &--form {
-    display: inline-block;
-    top: -12px;
+    top: 35px;
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+    }
   }
 }

@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header page__container">
+  <header class="header container">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <picture>
@@ -48,82 +48,93 @@
   </header>
   <main class="main-form">
     <section class="selection">
-      <h1 class="selection__title title">Подбор программы</h1>
-      <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="selection__title title container container--programs">Подбор программы</h1>
+      <p class="selection__description container container--programs">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <form class="selection__form form" action="https://htmlacademy.ru/" method="post">
+        <div class="form__group-container">
+          <fieldset class="form__group">
+            <legend class="visually-hidden">Профиль</legend>
+            <h2 class="form__group-title visually-hidden">Профиль</h2>
+            <ul class="form__group-list form__group-list--profil list-reset container container--programs">
+              <li class="form__group-item field">
+                <label class="field__name">
+                  <span class="field__label">ИМЯ:*</span>
+                  <input class="field__input input" type="text" name="name" placeholder="Барсик" required>
+                </label>
+              </li>
+              <li class="form__group-item field">
+                <label class="field__name">
+                  <span class="field__label">Вес (кг):*</span>
+                  <input class="field__input input" type="number" name="weight" placeholder="7" required>
+                </label>
+              </li>
+              <li class="form__group-item field">
+                <label class="field__name">
+                  <span class="field__label">Возраст (лет):</span>
+                  <input class="field__input input" type="number" name="age" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="visually-hidden">Программы</legend>
+            <h2 class="form__group-title visually-hidden">Программы</h2>
+            <div class="form__group-wrapper container container--programs">
+              <ul class=" form__group-list form__group-list--programs list-reset">
+                <li class="form__group-item radio">
+                  <label class="radio__name">
+                    <input class="radio__input input" type="radio" name="type" checked>
+                    <span class="radio__label">Похудение</span>
+                  </label>
+                </li>
+                <li class="form__group-item radio">
+                  <label class="radio__name">
+                    <input class="radio__input input" type="radio" name="type">
+                    <span class="radio__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__group-item radio">
+                  <label class="radio__name">
+                    <input class="radio__input input" type="radio" name="type">
+                    <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__group">
-          <legend class="form__group-title visually-hidden">Профиль</legend>
-          <ul class="form__group-list list-reset">
-            <li class="form__group-item field">
-              <label class="field__name">
-                <span class="field__label">ИМЯ:*</span>
-                <input class="field__input input" type="text" name="name" placeholder="Барсик" required>
-              </label>
-            </li>
-            <li class="form__group-item field">
-              <label class="field__name">
-                <span class="field__label">Вес (кг):*</span>
-                <input class="field__input input" type="number" name="weight" placeholder="7" required>
-              </label>
-            </li>
-            <li class="form__group-item field">
-              <label class="field__name">
-                <span class="field__label">Возраст (лет):</span>
-                <input class="field__input input" type="number" name="age" placeholder="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__group-title visually-hidden">Программы</legend>
-          <ul class="form__group-list list-reset">
-            <li class="form__group-item radio">
-              <label class="radio__name">
-                <input class="radio__input input" type="radio" name="type" checked>
-                <span class="radio__label">Похудение</span>
-              </label>
-            </li>
-            <li class="form__group-item radio">
-              <label class="radio__name">
-                <input class="radio__input input" type="radio" name="type">
-                <span class="radio__label">Набор массы</span>
-              </label>
-            </li>
-            <li class="form__group-item radio">
-              <label class="radio__name">
-                <input class="radio__input input" type="radio" name="type">
-                <span class="radio__label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__group-title title title--medium">Контактные данные (владельца кота)</legend>
+          <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
+          <h2 class="form__group-title form__group-title--contact title title--medium">Контактные данные (владельца кота)</h2>
           <div class="title-line title-line--form"></div>
-          <ul class="form__group-list list-reset">
+          <ul class="form__group-list form__group-list--contact list-reset container container--programs">
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">E-mail:*</span>
-                <input class="field__input input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="field__input field__input--email input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">Телефон:*</span>
-                <input class="field__input input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="field__input field__input--phone input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__group-title title title--medium">Комментарий</legend>
+          <legend class="visually-hidden">Комментарий</legend>
+          <h2 class="form__group-title form__group-title--coment title title--medium">Комментарий</h2>
           <div class="title-line title-line--form"></div>
-          <textarea class="form__textarea" name="comment" id="comment" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
+          <div class="form__textarea container container--programs">
+            <textarea class="form__textarea-value" name="comment" id="comment" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
+          </div>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__group-title title title--medium">Дополнительно</legend>
+        <fieldset class="form__group form__group--additional">
+          <legend class="visually-hidden">Дополнительно</legend>
+          <h2 class="form__group-title form__group-title--additional title title--medium">Дополнительно</h2>
           <div class="title-line title-line--form"></div>
-          <ul class="form__group-list list-reset">
+          <ul class="form__group-list form__group-list--additional list-reset container container--programs">
             <li class="form__group-item checkbox">
               <label class="checkbox__name">
                 <input class="checkbox__input input" type="checkbox" name="sweetener" checked>
@@ -150,12 +161,14 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button button--primary" type="submit">Отправить заявку</button>
-        <p class="form__description">* — Обязательные поля</p>
+        <div class="form__button-wrapper container container--programs">
+          <button class="button button--primary form__button" type="submit">Отправить заявку</button>
+          <p class="form__description">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper container container--programs">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">
@@ -164,10 +177,10 @@
       </div>
       <div class="contacts__map">
         <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="./images/map-desctop@1x.webp 1x, ./images/map-desctop@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="./images/map-desktop@1x.webp 1x, ./images/map-desktop@2x.webp 2x">
           <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x">
           <source width="320" height="362" type="image/webp" srcset="./images/map-mobile@1x.webp 1x, ./images/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="./images/map-desctop@1x.png 1x, ./images/map-desctop@2x.png 2x">
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
           <img class="contacts-image" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Схема проезда">
         </picture>
@@ -175,7 +188,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper container">
       <a class="footer__logo" href="index.html">
         <img class="footer__logo-text" src="./images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
       </a>

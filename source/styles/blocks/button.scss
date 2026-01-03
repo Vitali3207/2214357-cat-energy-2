@@ -2,14 +2,15 @@
   font-family: $font-secondary;
   font-size: 20px;
   line-height: 26px;
-  width: 100%;
   text-transform: uppercase;
   text-align: center;
   color: $color-basic-white;
   background-color: $color-basic-green;
   border: none;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   padding: 10px 20px;
   cursor: pointer;

@@ -1,16 +1,22 @@
-.footer__wrapper {
-  padding: 40px 20px;
+.footer {
   background-color: $bg-basic-grey;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 }
 
