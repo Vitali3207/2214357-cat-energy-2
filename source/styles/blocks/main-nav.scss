@@ -5,11 +5,45 @@
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $color-basic-white;
+  width: 100%;
+  top: 55px;
+  right: 0;
+  z-index: 1;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    position: static;
+    justify-content: end;
+    flex-flow: row wrap;
     flex-grow: 0;
-    gap: 13px;
+    gap: 33px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  padding: 22px 20px 24px;
+  border-top: 1px solid $color-border-grey-line;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border-grey-line;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: none;
+    padding: 0;
   }
 }
 
@@ -22,7 +56,6 @@
   text-align: center;
   text-decoration: none;
   display: inline-flex;
-  padding: 10px;
 
   &:hover {
     opacity: 0.7;
@@ -36,22 +69,37 @@
     opacity: 0.3;
   }
 
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $color-basic-white;
+    }
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $color-basic-green;
+    }
+  }
+
+  &--current-index {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $color-basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $color-basic-white;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 10px 0;
   }
-
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    // color: $color-basic-white;
-  }
-}
-
-.main-nav__link--current {
-  @media (min-width: $tablet-width) {
-    border-bottom: 2px solid $color-basic-green;
   }
 }
 
@@ -64,6 +112,10 @@
   background-size: 18px 18px;
   background-color: inherit;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toggle {

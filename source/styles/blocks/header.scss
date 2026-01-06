@@ -1,19 +1,19 @@
 .header {
   border-bottom: 1px solid $color-border-grey-light;
-  margin-bottom: 27px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-bottom: 0;
   }
 }
 
 .header__wrapper {
-  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 13px;
   align-items: center;
-  margin-bottom: 14px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-top: 25px;
@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 55px;
-    margin-bottom: 74px;
+    margin-bottom: 110px;
   }
 }
 

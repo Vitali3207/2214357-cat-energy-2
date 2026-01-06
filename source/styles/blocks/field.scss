@@ -31,6 +31,7 @@
 }
 
 .field__input {
+  position: relative;
   width: 100%;
   padding: 13px 15px;
   margin: 0;
@@ -40,10 +41,18 @@
   }
 
   &--email {
-    background-image: url("../../icons/email.svg");
+    background-image: url("../../icons/email-stroke.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: top 50% right 12px;
+
+    &:focus {
+      background-image: url("../../icons/email-green.svg");
+    }
+
+    &:invalid {
+      background-image: url("../../icons/email-red.svg");
+    }
 
     @media (min-width: $tablet-width) {
       background-position: top 50% right 16px;
@@ -51,14 +60,21 @@
   }
 
   &--phone {
-    background-image: url("../../icons/phone.svg");
+    background-image: url("../../icons/phone-stroke.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: top 50% right 13px;
+
+    &:focus {
+      background-image: url("../../icons/phone-green.svg");
+    }
+
+    &:invalid {
+      background-image: url("../../icons/phone-red.svg");
+    }
 
     @media (min-width: $tablet-width) {
       background-position: top 50% right 16px;
     }
   }
 }
-

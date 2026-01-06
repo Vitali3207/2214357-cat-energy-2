@@ -11,6 +11,19 @@
     color: $color-basic-grey;
   }
 
+  &:hover {
+    border: 1px solid $color-special-grey;
+  }
+
+  &:focus {
+    border: 1px solid $color-basic-grey;
+    stroke: #222222;
+  }
+
+  &:invalid {
+    border: 1px solid $color-border-red-light;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -26,6 +39,15 @@ input[type="radio"] {
   background-color: $color-basic-white;
   margin: 0;
   margin-right: 15px;
+
+  &:hover {
+    border: 1px solid $color-border-grey-dark;
+  }
+
+  &:disabled,
+  &:disabled + span {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
@@ -52,6 +74,15 @@ input[type="checkbox"] {
   margin: 0;
   margin-right: 15px;
 
+  &:hover {
+    border: 1px solid $color-border-grey-dark;
+  }
+
+  &:disabled,
+  &:disabled + span {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
@@ -68,4 +99,9 @@ input[type="checkbox"]:checked {
   @media (min-width: $tablet-width) {
     background-size: 24px 19px;
   }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
 }

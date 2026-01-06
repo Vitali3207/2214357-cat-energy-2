@@ -1,3 +1,11 @@
+.selection {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
 .selection__title {
   font-family: $font-secondary;
   font-size: 36px;
