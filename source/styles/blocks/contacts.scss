@@ -63,8 +63,18 @@
   }
 }
 
-.contacts-image {
-  width: 100%;
-  object-fit: cover;
+.contacts__iframe {
   display: block;
+  border: none;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
+
+// .contacts-image {
+//   width: 100%;
+//   object-fit: cover;
+//   display: block;
+// }
