@@ -93,7 +93,7 @@
   background-color: inherit;
   border: none;
   position: absolute;
-  top: 13px;
+  top: 23px;
   right: 20px;
 
   @media (min-width: $tablet-width) {
@@ -111,7 +111,7 @@
   background-color: inherit;
   border: none;
   position: absolute;
-  top: 13px;
+  top: 23px;
   right: 20px;
 
   @media (min-width: $tablet-width) {
@@ -123,10 +123,10 @@
   display: flex;
   flex-direction: column;
   background-color: $color-basic-white;
-  min-width: 100%;
+  width: 100%;
   z-index: 1;
   position: absolute;
-  margin-top: 15px;
+  right: 0;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -136,13 +136,8 @@
     gap: 33px;
     margin: 0;
     padding: 0;
-    padding-right: 30px;
     border: none;
     background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 110px;
   }
 }
 
@@ -158,13 +153,8 @@
     gap: 33px;
     margin: 0;
     padding: 0;
-    padding-right: 30px;
     border: none;
     background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 110px;
   }
 }
 
@@ -177,10 +167,9 @@
   flex-direction: column;
   background-color: $color-basic-white;
   z-index: 1;
-  width: 100%;
+  min-width: 100%;
   flex: 0 0 100%;
-  margin-top: 15px;
-  margin-bottom: -15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -190,12 +179,15 @@
     gap: 33px;
     margin: 0;
     padding: 0;
-    padding-right: 30px;
     border: none;
     background-color: transparent;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    padding-right: 110px;
+.main-nav--nojs .main-nav__item {
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
