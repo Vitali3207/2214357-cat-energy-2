@@ -92,6 +92,9 @@
   background-size: 18px 18px;
   background-color: inherit;
   border: none;
+  position: absolute;
+  top: 13px;
+  right: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -107,9 +110,39 @@
   background-size: 24px 24px;
   background-color: inherit;
   border: none;
+  position: absolute;
+  top: 13px;
+  right: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-basic-white;
+  min-width: 100%;
+  z-index: 1;
+  position: absolute;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    justify-content: end;
+    flex-flow: row wrap;
+    flex-grow: 0;
+    gap: 33px;
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;
+    border: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 110px;
   }
 }
 
@@ -118,6 +151,20 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    position: static;
+    justify-content: end;
+    flex-flow: row wrap;
+    flex-grow: 0;
+    gap: 33px;
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;
+    border: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 110px;
   }
 }
 
@@ -128,12 +175,12 @@
 .main-nav--nojs .main-nav__list {
   display: flex;
   flex-direction: column;
-  position: relative;
   background-color: $color-basic-white;
-
-  top: 0;
-  right: 0;
   z-index: 1;
+  width: 100%;
+  flex: 0 0 100%;
+  margin-top: 15px;
+  margin-bottom: -15px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -141,30 +188,14 @@
     flex-flow: row wrap;
     flex-grow: 0;
     gap: 33px;
+    margin: 0;
     padding: 0;
+    padding-right: 30px;
     border: none;
     background-color: transparent;
   }
-}
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: $color-basic-white;
-  width: 100%;
-  top: 55px;
-  right: 0;
-  z-index: 1;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-    justify-content: end;
-    flex-flow: row wrap;
-    flex-grow: 0;
-    gap: 33px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
+  @media (min-width: $desktop-width) {
+    padding-right: 110px;
   }
 }
