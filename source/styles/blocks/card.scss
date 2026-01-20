@@ -160,5 +160,14 @@
   &--more {
     font-size: 16px;
     line-height: 20px;
+
+    &:hover {
+      background-color: $color-light-grey;
+    }
+
+    &:active {
+      background-color: $color-light-grey;
+    }
   }
 }
+
