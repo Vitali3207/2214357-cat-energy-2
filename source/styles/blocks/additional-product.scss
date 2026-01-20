@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 244px;
     align-items: center;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
   }
 }
 
@@ -58,7 +58,7 @@
 .additional-product__container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -75,9 +75,12 @@
 .additional-product__text {
   line-height: 20px;
   color: $color-special-dark-grey;
+  margin-top: -2;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    margin-top: 0;
+    align-self: flex-end;
   }
 }
 
@@ -90,6 +93,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 50px;
+
+    &--secondary {
+      margin-left: 61px;
+    }
   }
 
   @media (min-width: $desktop-width) {

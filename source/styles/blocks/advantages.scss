@@ -2,7 +2,7 @@
   background: $bg-special-grey;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $color-basic-white 0%, $color-basic-white 57%, $bg-special-grey 57%, $bg-special-grey 100%);
+    background: linear-gradient(to bottom, $color-basic-white 0%, $color-basic-white 55%, $bg-special-grey 55%, $bg-special-grey 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
 
 .advantages__content-wrrapper {
   @media (min-width: $desktop-width) {
-    max-width: 440px;
+    max-width: 432px;
   }
 }
 
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 99px;
+    margin-bottom: 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,10 +51,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    gap: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,10 +74,11 @@
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
+    padding: 15px 0 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 62px;
     width: 162px;
   }
 }
@@ -87,6 +89,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,7 +121,7 @@
   line-height: 12px;
   color: $color-basic-grey;
   position: absolute;
-  top: 47px;
+  top: 46px;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
@@ -130,7 +133,7 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $color-basic-white;
-    top: 59px;
+    top: 62px;
     padding: 0 8px;
     white-space: nowrap;
   }
@@ -167,6 +170,7 @@
   text-align: center;
   color: $color-basic-black;
   margin-bottom: 20px;
+  letter-spacing: 0.01em;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -174,6 +178,8 @@
     text-align: right;
     display: flex;
     flex-direction: column;
+    row-gap: 9px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,3 +189,4 @@
     margin: 0;
   }
 }
+

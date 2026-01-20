@@ -2,7 +2,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +15,10 @@
   flex-direction: column;
   gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    gap: 33px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -25,14 +29,14 @@
 .programs__item {
   position: relative;
   background-color: $bg-basic-grey;
-  padding: 30px 20px 18px;
+  padding: 30px 20px 19px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 20px 53px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 20px 52px 55px;
+    padding: 77px 26px 60px 53px;
   }
 
   &--slim::before {
@@ -51,9 +55,8 @@
       height: 211px;
       background-size: 200px 211px;
       position: absolute;
-      top: 50%;
+      top: 79px;
       right: 63px;
-      transform: translateY(-50%);
       margin-bottom: 0;
     }
 
@@ -78,15 +81,15 @@
     background-size: 67px 50px;
     position: absolute;
     top: 24px;
+    left: 12px;
 
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 200px;
       background-size: 268px 200px;
       position: absolute;
-      top: 54%;
-      right: 29px;
-      transform: translateY(-50%);
+      top: 90px;
+      left: 411px;
       margin-bottom: 0;
     }
 
@@ -106,7 +109,7 @@
   line-height: 37px;
   text-transform: uppercase;
   background-color: $bg-basic-grey;
-  margin-left: 90px;
+  margin-left: 70px;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
@@ -123,22 +126,22 @@
 .programs__description {
   color: $color-basic-grey;
   margin: 0;
-  padding-bottom: 23px;
-  margin-bottom: 15px;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
   border-bottom: 1px solid $color-border-grey-light;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
     border-bottom: none;
-    max-width: 50%;
+    max-width: 54%;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }
 
@@ -180,11 +183,21 @@
     background-color: $color-basic-black;
     position: absolute;
     top: 7px;
-    left: 100px;
+    left: 102px;
 
     @media (min-width: $tablet-width) {
       top: 11px;
       left: 130px;
     }
+  }
+}
+
+.programs__link--pro::after {
+  left: 97px;
+  top: 8px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    left: 128px;
   }
 }

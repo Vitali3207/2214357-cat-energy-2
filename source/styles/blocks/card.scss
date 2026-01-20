@@ -1,7 +1,7 @@
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
@@ -67,11 +67,14 @@
     width: 200px;
     max-height: 210px;
     margin-bottom: 22px;
+    margin-top: 10px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 169px;
     max-height: 210px;
+    margin-top: 9px;
+    margin-bottom: 13px;
   }
 }
 
@@ -83,23 +86,32 @@
   text-transform: uppercase;
   color: $color-special-dark-grey;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 45px;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
     max-width: 135px;
     text-align: center;
     justify-self: center;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+
   &--more {
-    margin: 50px auto 23px;
+    margin: 55px auto 8px;
 
     @media (min-width: $tablet-width) {
+      margin-top: 110px;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
       margin-top: 100px;
     }
   }
@@ -116,20 +128,37 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   &--more {
     margin: 0 auto;
     margin-bottom: 21px;
-    max-width: 170px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 82px;
+      max-width: 225px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 92px;
+      max-width: 225px;
     }
   }
 }
 
 .card__button {
   grid-column: span 2;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  &--more {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

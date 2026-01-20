@@ -29,7 +29,7 @@
         </picture>
       </a>
     </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--programs main-nav--nojs">
       <button class="main-nav__toggle  button-nav" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -53,19 +53,18 @@
       <form class="selection__form form" action="https://htmlacademy.ru/" method="post">
         <div class="form__group-container">
           <fieldset class="form__group">
-            <legend class="visually-hidden">Профиль</legend>
             <h2 class="form__group-title visually-hidden">Профиль</h2>
             <ul class="form__group-list form__group-list--profil list-reset container container--programs">
               <li class="form__group-item field">
                 <label class="field__name">
                   <span class="field__label">ИМЯ:*</span>
-                  <input class="field__input input" type="text" name="name" placeholder="Барсик">
+                  <input class="field__input input" type="text" name="name" placeholder="Барсик" required>
                 </label>
               </li>
               <li class="form__group-item field">
                 <label class="field__name">
                   <span class="field__label">Вес (кг):*</span>
-                  <input class="field__input input" type="number" name="weight" placeholder="7">
+                  <input class="field__input input" type="number" name="weight" placeholder="7" required>
                 </label>
               </li>
               <li class="form__group-item field">
@@ -77,7 +76,6 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="visually-hidden">Программы</legend>
             <h2 class="form__group-title visually-hidden">Программы</h2>
             <div class="form__group-wrapper container container--programs">
               <ul class=" form__group-list form__group-list--programs list-reset">
@@ -103,37 +101,46 @@
             </div>
           </fieldset>
         </div>
-        <fieldset class="form__group">
-          <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
-          <h2 class="form__group-title form__group-title--contact title title--medium">Контактные данные (владельца кота)</h2>
+        <fieldset class="form__group form__group--contacts">
+          <div class="title__wrapper">
+            <div class="container container--programs">
+              <h2 class="form__group-title form__group-title--contacts title title--medium">Контактные данные (владельца кота)</h2>
+            </div>
+          </div>
           <div class="title-line title-line--form"></div>
-          <ul class="form__group-list form__group-list--contact list-reset container container--programs">
+          <ul class="form__group-list form__group-list--contacts list-reset container container--programs">
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">E-mail:*</span>
-                <input class="field__input field__input--email input" type="email" name="email" placeholder="kuklachev@gmail.com">
+                <input class="field__input field__input--email input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">Телефон:*</span>
-                <input class="field__input field__input--phone input" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                <input class="field__input field__input--phone input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="visually-hidden">Комментарий</legend>
-          <h2 class="form__group-title form__group-title--coment title title--medium">Комментарий</h2>
-          <div class="title-line title-line--form"></div>
+        <fieldset class="form__group form__group--coments">
+          <div class="title__wrapper">
+            <div class="container container--programs">
+              <h2 class="form__group-title form__group-title--coment title title--medium">Комментарий</h2>
+            </div>
+          </div>
+          <div class="title-line title-line--form title-line--coment"></div>
           <div class="form__textarea container container--programs">
             <textarea class="form__textarea-value" name="comment" id="comment" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
         <fieldset class="form__group form__group--additional">
-          <legend class="visually-hidden">Дополнительно</legend>
-          <h2 class="form__group-title form__group-title--additional title title--medium">Дополнительно</h2>
-          <div class="title-line title-line--form"></div>
+          <div class="title__wrapper">
+            <div class="container container--programs">
+              <h2 class="form__group-title form__group-title--additional title title--medium">Дополнительно</h2>
+            </div>
+          </div>
+          <div class="title-line title-line--form title-line--additional"></div>
           <ul class="form__group-list form__group-list--additional list-reset container container--programs">
             <li class="form__group-item checkbox">
               <label class="checkbox__name">
@@ -170,7 +177,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
         <address class="contacts__address">
           ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span>
         </address>

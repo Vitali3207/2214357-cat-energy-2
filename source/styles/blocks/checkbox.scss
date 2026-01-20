@@ -1,15 +1,6 @@
 .checkbox__name {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
 }
 
 .checkbox__label {

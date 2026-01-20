@@ -6,7 +6,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    margin-bottom: 69px;
+    margin-bottom: 21px;
   }
 }
 
@@ -14,7 +14,7 @@
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 7px;
   }
 }
 
@@ -26,11 +26,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 36px 59px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -41,7 +43,7 @@
   position: relative;
 
   &--first {
-    --images: url("../../icons/instructions-first.svg");
+    --images: url("../../icons/stack.svg#instructions-first");
     --number: "1";
     --position: 25px;
   }
@@ -66,18 +68,19 @@
 
   &::before {
     content: "";
-    display: inline-flex;
+    display: block;
     flex-shrink: 0;
     width: 60px;
     height: 60px;
     background-image: var(--images);
     background-repeat: no-repeat;
-    background-size: 60px 60px;
+    background-position: 50% 50%;
+    background-size: 30px 32px;
+    background-color: $color-basic-green;
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      background-size: 80px 80px;
       align-self: start;
     }
   }
@@ -107,10 +110,11 @@
 
 .instructions__title {
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
+    line-height: 60px;
   }
 }
 
@@ -121,5 +125,22 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
   }
 }
+
+.instructions__description-br {
+  display: none;
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+

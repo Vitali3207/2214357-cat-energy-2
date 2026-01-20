@@ -5,13 +5,14 @@
 .footer__wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
     padding-bottom: 55px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,12 +22,8 @@
 }
 
 .footer__logo {
-  display: block;
-  text-align: center;
-  margin-bottom: 20px;
-
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-top: 4px;
   }
 
 
@@ -40,5 +37,16 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.footer__logo-text {
+  display: block;
+  justify-self: center;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2;
+    margin-bottom: 0;
   }
 }

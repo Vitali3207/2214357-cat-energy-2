@@ -11,7 +11,9 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
-    width: auto;
+    margin-top: 7px;
+    margin-left: 35px;
+    max-width: 184px;
   }
 }
 
@@ -21,23 +23,19 @@
   height: 22px;
   mask-image: var(--images);
   mask-repeat: no-repeat;
-  mask-size: var(--size);
   mask-position: 50% 50%;
   background-color: $color-bg-grey;
 
   &--vkontakte {
-    --images: url("../../icons/vkontakte.svg");
-    --size: 27px 17px;
+    --images: url("../../icons/stack.svg#vkontakte");
   }
 
   &--youtube {
-    --images: url("../../icons/youtube.svg");
-    --size: 24px 19px;
+    --images: url("../../icons/stack.svg#youtube");
   }
 
   &--telegram {
-    --images: url("../../icons/telegram.svg");
-    --size: 20px 18px;
+    --images: url("../../icons/stack.svg#telegram");
   }
 
   &:hover {
