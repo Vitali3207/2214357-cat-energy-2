@@ -73,7 +73,6 @@
   @media (min-width: $desktop-width) {
     width: 169px;
     max-height: 210px;
-    margin-top: 9px;
     margin-bottom: 13px;
   }
 }
@@ -100,7 +99,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   &--more {
@@ -160,5 +159,14 @@
   &--more {
     font-size: 16px;
     line-height: 20px;
+
+    &:hover {
+      background-color: $color-light-grey;
+    }
+
+    &:active {
+      background-color: $color-light-grey;
+    }
   }
 }
+

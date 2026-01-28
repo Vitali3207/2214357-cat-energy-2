@@ -6,22 +6,10 @@
   color: $color-basic-grey;
   border: 1px solid $color-border-grey;
   outline: none;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $color-basic-grey;
-  }
-
-  &:hover {
-    border: 1px solid $color-special-grey;
-  }
-
-  &:focus {
-    border: 1px solid $color-basic-grey;
-    stroke: #222222;
-  }
-
-  &:invalid {
-    border: 1px solid $color-border-red-light;
   }
 
   @media (min-width: $tablet-width) {
