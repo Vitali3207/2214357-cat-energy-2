@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header header--inner container container--programs">
+  <header class="header header--inner container container--programs" data-test="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <picture>
@@ -46,8 +46,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main-form">
-    <section class="selection">
+  <main class="main-form" data-test="main">
+    <section class="selection" data-test="selection">
       <h1 class="selection__title title container container--programs">Подбор программы</h1>
       <p class="selection__description container container--programs">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <form class="selection__form form" action="https://htmlacademy.ru/" method="post">
@@ -105,7 +105,7 @@
         </div>
         <fieldset class="form__group form__group--contacts">
           <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
-          <div class="title__wrapper">
+          <div class="title-wrapper">
             <div class="container container--programs">
               <h2 class="form__group-title form__group-title--contacts title title--medium" aria-hidden="true">Контактные данные (владельца кота)</h2>
             </div>
@@ -130,7 +130,7 @@
         </fieldset>
         <fieldset class="form__group form__group--coments">
           <legend class="visually-hidden">Комментарий</legend>
-          <div class="title__wrapper">
+          <div class="title-wrapper">
             <div class="container container--programs">
               <h2 class="form__group-title form__group-title--coment title title--medium" aria-hidden="true">Комментарий</h2>
             </div>
@@ -142,7 +142,7 @@
         </fieldset>
         <fieldset class="form__group form__group--additional">
           <legend class="visually-hidden">Дополнительно</legend>
-          <div class="title__wrapper">
+          <div class="title-wrapper">
             <div class="container container--programs">
               <h2 class="form__group-title form__group-title--additional title title--medium" aria-hidden="true">Дополнительно</h2>
             </div>
@@ -181,7 +181,7 @@
         </div>
       </form>
     </section>
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
         <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
@@ -202,7 +202,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo" href="index.html">
         <img class="footer__logo-text" src="./images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
