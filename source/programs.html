@@ -53,7 +53,8 @@
       <form class="selection__form form" action="https://htmlacademy.ru/" method="post">
         <div class="form__group-container">
           <fieldset class="form__group">
-            <h2 class="form__group-title visually-hidden">Профиль</h2>
+            <legend class="visually-hidden">Профиль</legend>
+            <h2 class="form__group-title visually-hidden" aria-hidden="true">Профиль</h2>
             <ul class="form__group-list form__group-list--profil list-reset container container--programs">
               <li class="form__group-item field">
                 <label class="field__name">
@@ -76,7 +77,8 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <h2 class="form__group-title visually-hidden">Программы</h2>
+            <legend class="visually-hidden">Программы</legend>
+            <h2 class="form__group-title visually-hidden" aria-hidden="true">Программы</h2>
             <div class="form__group-wrapper container container--programs">
               <ul class=" form__group-list form__group-list--programs list-reset">
                 <li class="form__group-item radio">
@@ -102,9 +104,10 @@
           </fieldset>
         </div>
         <fieldset class="form__group form__group--contacts">
+          <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
           <div class="title__wrapper">
             <div class="container container--programs">
-              <h2 class="form__group-title form__group-title--contacts title title--medium">Контактные данные (владельца кота)</h2>
+              <h2 class="form__group-title form__group-title--contacts title title--medium" aria-hidden="true">Контактные данные (владельца кота)</h2>
             </div>
           </div>
           <div class="title-line title-line--form"></div>
@@ -112,21 +115,24 @@
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">E-mail:*</span>
-                <input class="field__input field__input--email input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="field__input input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <i class="field__input-icon field__input-icon--email"></i>
               </label>
             </li>
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">Телефон:*</span>
-                <input class="field__input field__input--phone input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="field__input input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                <i class="field__input-icon field__input-icon--phone"></i>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__group form__group--coments">
+          <legend class="visually-hidden">Комментарий</legend>
           <div class="title__wrapper">
             <div class="container container--programs">
-              <h2 class="form__group-title form__group-title--coment title title--medium">Комментарий</h2>
+              <h2 class="form__group-title form__group-title--coment title title--medium" aria-hidden="true">Комментарий</h2>
             </div>
           </div>
           <div class="title-line title-line--form title-line--coment"></div>
@@ -135,9 +141,10 @@
           </div>
         </fieldset>
         <fieldset class="form__group form__group--additional">
+          <legend class="visually-hidden">Дополнительно</legend>
           <div class="title__wrapper">
             <div class="container container--programs">
-              <h2 class="form__group-title form__group-title--additional title title--medium">Дополнительно</h2>
+              <h2 class="form__group-title form__group-title--additional title title--medium" aria-hidden="true">Дополнительно</h2>
             </div>
           </div>
           <div class="title-line title-line--form title-line--additional"></div>
